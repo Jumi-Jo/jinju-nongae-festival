@@ -14,6 +14,9 @@
   --color-purple : #494596;
 }
 /**공통*/
+.content *{
+  color: #333;
+}
 .content .inner{
   max-width: 1400px;
   display: flex;
@@ -289,13 +292,50 @@
   }
 }
 
+/*hello*/
+.hello .content-box{
+  position: relative;
+  display: flex;
+  gap: 5%;
+  align-items: flex-start;
+}
+.hello .hello-img{
+  width: 25%;
+}
+.hello .hello-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.hello .hello-txt{
+  width: 75%;
+  font-family: var(--sub-font02);
+  padding: 2%;
+}
+.hello .hello-txt p{
+  margin: 3% 0;
+}
+.hello .hello-txt .p12{
+  text-align: right;
+  margin-top: 15%;
+}
 
+@media (max-width : 1024px){
+  .hello .lnb{
+    padding-left: 0;
+  }
+  .hello .lnb h4{
+    font-size: 2.2rem;
+  }
+  .content .lnb ul li a{
+    font-size: 1.8rem;
+  }
+  .hello .hello-txt p{
+    margin: 6% 0;
+  }
+}
 
-
-
-
-
-
+@media (max-width : 765px){}
 
 
 
