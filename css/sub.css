@@ -308,7 +308,11 @@
 }
 .program .program-list{
   border-top: 5px solid #ddd;
-  padding: 5% 3%;
+  padding: 0 3%;
+}
+.program .program-list li{
+  padding: 50px 0;
+  border-bottom: 2px solid #ddd;
 }
 .program .pro-up{
   display: flex;
@@ -336,6 +340,59 @@
   font-size: 1.6rem;
   margin: 10px 0 20px;
 }
+
+.program .pro-up .pro-txt .pro-date p{
+  font-family: var(--sub-font01);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.program .pro-up .pro-txt .pro-date span{
+  color: var(--color-orange);
+  font-size: 2rem;
+
+}
+.program .pro-up .pro-txt .pro-date strong{
+  font-family: var(--sub-font02);
+  font-weight: 500;
+}
+.program .pro-up .pro-txt .precautions{
+  margin-top: 20px;
+  font-family: var(--sub-font02);
+  font-size: 1.4rem;
+}
+.program .pro-steps{
+  background-color: #EA4F53;
+  height: 300px;
+}
+
+.program .pro-list .finish .pro-up .pro-img{
+  position: relative;
+}
+.program .pro-list .finish .pro-up .pro-img p{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 10rem;
+  padding: 20% 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
