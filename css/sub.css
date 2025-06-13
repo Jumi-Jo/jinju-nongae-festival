@@ -306,7 +306,10 @@
   font-size: 2.2rem;
   padding: 8px 0;
 }
-
+.program .program-list{
+  border-top: 5px solid #ddd;
+  padding: 5% 3%;
+}
 .program .pro-up{
   display: flex;
   justify-content: space-between;
@@ -315,6 +318,27 @@
 .program .pro-up > div{
   width: 50%;
 }
+
+.program .pro-up .pro-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.program .pro-up .pro-txt{
+  padding: 3% 5%;
+}
+.program .pro-up .pro-txt h2{
+  font-size: 4rem;
+}
+.program .pro-up .pro-txt > p{
+  font-family: var(--sub-font01);
+  font-size: 1.6rem;
+  margin: 10px;
+}
+
+
+
 
 
 
