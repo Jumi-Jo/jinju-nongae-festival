@@ -329,12 +329,12 @@
   padding: 3% 5%;
 }
 .program .pro-up .pro-txt h2{
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .program .pro-up .pro-txt > p{
   font-family: var(--sub-font01);
   font-size: 1.6rem;
-  margin: 10px;
+  margin: 10px 0 20px;
 }
 
 
