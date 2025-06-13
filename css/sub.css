@@ -65,7 +65,7 @@
   display: block;
   margin: 0 auto;
   color: #fff;
-  background-color: #F6A217;
+  background-color: #333;
   border-radius: 20px;
   width: 200px;
   font-size: 1.8rem;
@@ -73,8 +73,8 @@
   padding: 10px;
   margin-top: 100px;
 }
-.com-btn .sp3{
-  display: none;
+.com-btn:hover{
+  background-color: #EA4F53;
 }
 /*반응형*/
 
@@ -311,7 +311,7 @@
   border-top: 5px solid #ddd;
   padding: 0 3%;
 }
-.program .program-list > li{
+.program .program-list .pro-list > li{
   padding: 50px 0;
   border-bottom: 2px solid #ddd;
 }
@@ -363,7 +363,7 @@
   font-size: 1.4rem;
 }
 .program .pro-steps{
-  padding: 30px 20px;
+  padding: 50px 0;
 }
 .program .pro-steps ol{
   display: flex;
@@ -372,7 +372,7 @@
 }
 .program .pro-steps ol > li{
   width: calc((100% - 10px) / 3);
-  background-color: floralwhite;
+  background-color: snow;
 }
 .program .pro-steps ol  li .select-head{
   text-align: center;
@@ -383,7 +383,6 @@
   font-family: var(--main-font02);
   font-weight: 400;
   color: #fff;
-  border: 1px solid #fff;
   padding: 10px 0;
 }
 .program .pro-steps ol li .select-body{
@@ -402,18 +401,23 @@
   padding: 10px 0 10px 20px;
 }
 .program .pro-steps ol li .select-body ul li:hover{
-  background-color: #F6A217;
+  background-color: #ddd;
 }
 .program .pro-steps ol li .select-body .select-time li{
   display: flex;
   gap: 10px;
 }
+
 .program .pro-steps ol li .select-body ul .count{
   font-size: 1.4rem;
 }
 
-
-
+.program .pro-steps ol li .select-body ul .count strong{
+  color: #EA4F53;
+}
+.program .pro-steps ol li .select-body ul .count strong.red{
+  color: #2B77BC;
+}
 
 
 
