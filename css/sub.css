@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-
+ 
 :root{
   --main-font01 :  'LibraryK', sans-serif;
   --main-font02 : 'YiSunShinDotumM', sans-serif;
@@ -376,7 +376,7 @@
 }
 .program .pro-steps ol  li .select-head{
   text-align: center;
-  background-color: var(--color-navy);
+  background-color: #333;
   
 }
 .program .pro-steps ol li .select-head h2{
