@@ -359,6 +359,7 @@
   height: 80px;
   border: 3px solid var(--color-navy);
   padding: 2%;
+  cursor: pointer;
 }
 
 .event .event-name ul li:not(:first-child){
@@ -389,32 +390,32 @@
 }
 
 
-.event .event-img .ev-li{
+.event .event-content .ev-li{
   display: flex;
   flex-wrap: wrap; 
   justify-content: space-between;
   gap: 20px;
   padding: 5% 0;
 }
-.event .event-img .ev-li li{
+.event .event-content .ev-li li{
   width: calc((100% - 60px) / 4);
 }
-.event .event-img .ev-li li .event-up img{
+.event .event-content .ev-li li .event-up img{
   width: 100%;
 }
-.event .event-img .event-txt{
+.event .event-content .event-txt{
   padding: 5%;
   border: 2px solid #ccc;
   height: 300px;
   overflow: hidden;
 }
-.event .event-img .event-txt h5{
+.event .event-content .event-txt h5{
   font-size: 2rem;
   margin-bottom: 8%;
   padding: 0 3%;
 }
 
-.event .event-img .event-txt .sortation{
+.event .event-content .event-txt .sortation{
   display: inline-block;
   font-size: 1.4rem;
   background-color: var(--color-blue);
@@ -426,17 +427,23 @@
   font-weight: 400;
 }
 
-.event .event-img .event-txt .sort-perfo{
+.event .event-content .event-txt .sort-perfo{
   background-color: var(--color-orange);
 }
-.event .event-img .event-txt p{
+.event .event-content .event-txt .sort-side{
+  background-color: var(--color-purple);
+}
+.event .event-content .event-txt .sort-perfo{
+  background-color: var(--color-orange);
+}
+.event .event-content .event-txt p{
   font-family: var(--sub-font02);
   display: flex;
   margin: 5% 0;
   gap: 5px;
   font-size: 1.6rem;
 }
-.event .event-img .event-txt p span{
+.event .event-content .event-txt p span{
   display: block;
 }
 
