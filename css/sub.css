@@ -345,6 +345,131 @@
 }
 
 
+  
+/*event*/
+.event .event-name ul{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  justify-content: space-between;
+  text-align: center;
+}
+.event .event-name ul li{
+  width: calc(100% / 4);
+  height: 80px;
+  border: 3px solid var(--color-navy);
+  padding: 2%;
+}
+
+.event .event-name ul li:not(:first-child){
+  border-left: 0;
+}
+.event .event-name ul li h4{
+  font-size: 2.4rem;
+}
+.event .event-name ul li p{
+  display: none;
+  color: #fff;
+  font-family: var(--sub-font01);
+}
+.event .event-name ul li:hover{
+  background-color: #333;
+  padding: 10px 0;
+  border: 0;
+}
+.event .event-name ul li:hover h4{
+  color: #fff;
+}
+.event .event-name ul li:hover p{
+  display: block;
+}
+
+.event .event-img .event-tab{
+  padding: 3% 0;
+}
+
+
+.event .event-img .ev-li{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  gap: 20px;
+  padding: 5% 0;
+}
+.event .event-img .ev-li li{
+  width: calc((100% - 60px) / 4);
+}
+.event .event-img .ev-li li .event-up img{
+  width: 100%;
+}
+.event .event-img .event-txt{
+  padding: 5%;
+  border: 2px solid #ccc;
+  height: 300px;
+  overflow: hidden;
+}
+.event .event-img .event-txt h5{
+  font-size: 2rem;
+  margin-bottom: 8%;
+  padding: 0 3%;
+}
+
+.event .event-img .event-txt .sortation{
+  display: inline-block;
+  font-size: 1.4rem;
+  background-color: var(--color-blue);
+  color: #fff;
+  margin-left: 10px;
+  padding: 1% 3% 0;
+  border-radius:7px;
+  font-family: var(--sub-font02);
+  font-weight: 400;
+}
+
+.event .event-img .event-txt .sort-perfo{
+  background-color: var(--color-orange);
+}
+.event .event-img .event-txt p{
+  font-family: var(--sub-font02);
+  display: flex;
+  margin: 5% 0;
+  gap: 5px;
+  font-size: 1.6rem;
+}
+.event .event-img .event-txt p span{
+  display: block;
+}
+
+
+
+
+
+
+.event .sp1{
+  display: block;
+  color: #fff;
+}
+.event .sp3{
+  display: none;
+}
+.com-btn-more1, .com-btn-more2{
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #F6A217;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 15px;
+  margin-top: 100px;
+  font-family: var(--main-font02);
+  cursor: pointer;
+}
+
+
+
+
 
 /*program*/
 
