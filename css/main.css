@@ -34,7 +34,7 @@ section:not(:first-child){
   padding: 10px 0;
 }
 .com-txt p{
-  font-family: var(--sub-font01);
+  font-family: var(--sub-font02);
   font-size: 1.6rem;
   line-height: 1.8;
   color: #fff;
@@ -52,6 +52,9 @@ section:not(:first-child){
   text-align: center;
   padding: 10px;
   margin-top: 100px;
+}
+.com-btn:hover{
+  background-color: #87BED8;
 }
 .com-btn .sp3{
   display: none;
@@ -195,6 +198,10 @@ section:not(:first-child){
 
 
 /*promotion-video*/
+
+#promotion-video {
+  position: relative;
+}
 #promotion-video .video-box{
   width: 560px;
   height: 315px;
@@ -202,8 +209,22 @@ section:not(:first-child){
   border-radius: 30px;
   overflow: hidden;
 }
-
-
+#promotion-video .guruem01{
+  position: absolute;
+  top: 600px;
+  left: 0;  
+  width: 200px;
+}
+#promotion-video .guruem02{
+  position: absolute;
+  top: 0;
+  right: 0;  
+  width: 250px;
+}
+#promotion-video .guruem01 img, #promotion-video .guruem02 img{
+  width: 100%;
+  object-fit: contain;
+}
 
 /*event*/
 @keyframes fire1{
@@ -265,7 +286,7 @@ section:not(:first-child){
   margin-bottom: 20px;
 }
 #event ul li .text-box p{
-  font-family: var(--sub-font01);
+  font-family: var(--sub-font02);
   font-size: 1.6rem;
   margin-bottom: 60px;
 }
@@ -302,7 +323,9 @@ section:not(:first-child){
   font-family: var(--main-font02);
   cursor: pointer;
 }
-
+.com-btn-more1:hover, .com-btn-more2:hover{
+  background-color: #87BED8;
+}
 
 /*반응형*/
 
@@ -510,7 +533,8 @@ section:not(:first-child){
 #program ul li .program-txt span{
   font-weight: 500;
   font-size: 1.4rem;
-  color: #555;
+  color: #333;
+  font-family: var(--sub-font02);
 }
 #program ul li .program-txt .span1{
   margin-bottom: 10px;
