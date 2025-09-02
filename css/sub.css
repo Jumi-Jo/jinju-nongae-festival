@@ -50,10 +50,11 @@
   color: #333;
   font-size: 2.4rem;
   padding: 8px 0;
+  font-family: var(--sub-font02);
 }
 .content .lnb ul li.active a{
   color: var(--color-orange);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .content .content-box{
@@ -213,6 +214,7 @@
 .sub-main-visual .sub-main-txt h3{
   font-size: 5rem;
   margin-bottom: 20px;
+  font-family: var(--main-font02);
 }
 .sub-main-visual .sub-main-txt .breadcrumbs{
   display: flex;
@@ -309,6 +311,7 @@
 .hello .hello-txt{
   width: 75%;
   font-family: var(--sub-font02);
+  font-weight: 500;
   padding: 2%;
 }
 .hello .hello-txt p{
