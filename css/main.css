@@ -214,18 +214,27 @@ section:not(:first-child){
   top: 600px;
   left: 0;  
   width: 200px;
+  z-index: 0;
 }
 #promotion-video .guruem02{
   position: absolute;
   top: 0;
   right: 0;  
   width: 250px;
+  z-index: 0;
 }
 #promotion-video .guruem01 img, #promotion-video .guruem02 img{
   width: 100%;
   object-fit: contain;
 }
-
+@media (max-width : 765px){
+  #promotion-video .guruem01{
+  width: 100px;
+}
+#promotion-video .guruem02{ 
+  width: 150px;
+}
+}
 /*event*/
 @keyframes fire1{
   0%{transform: scale(0);}
@@ -528,7 +537,7 @@ section:not(:first-child){
   font-family: var(--sub-font01);
   line-height: 1.6;
   font-size: 1.6rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 #program ul li .program-txt span{
   font-weight: 500;
@@ -549,8 +558,8 @@ section:not(:first-child){
   padding-left: 20px;
   text-align: left;
 }
-#program ul li .program-txt span span{
-  font-size: 1.2rem;
+#program ul li .program-txt span .middot{
+  font-size: 2rem;
 }
 #program ul li .program-txt .reserv-btn{
   display: block;
@@ -624,6 +633,8 @@ section:not(:first-child){
 #program ul li .n1, #program ul li .w2, #program ul li .n3, #program ul li .w4{
   opacity: 0;
 }
+
+
 /*반응형*/
 
 @media (max-width : 1024px){
@@ -709,6 +720,7 @@ section:not(:first-child){
     width: calc(100% / 3);
     height: 180px; 
     display: block;
+    cursor: pointer;
   }
   #program ul li .program-img{
     width: 100%;
@@ -726,6 +738,7 @@ section:not(:first-child){
   #program ul li .program-txt{
     display: none;
   }
+
   #program ul li .w1, #program ul li .n1{
     top: 10px;
     left: 10px;
@@ -753,9 +766,11 @@ section:not(:first-child){
     height: 100%;
     padding-top: 60px;
     background-color: rgba(0, 0, 0, 0.5);
+
   }
   #program ul li .hide-txt h4{
     font-weight: 500;
+    font-family: var(--sub-font02);
   }
 }
 
@@ -831,4 +846,3 @@ section:not(:first-child){
     width: calc((100% - 60px) / 2);
   }
 }
-

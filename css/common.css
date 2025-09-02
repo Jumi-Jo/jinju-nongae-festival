@@ -4,7 +4,7 @@
   --main-font01 :  'LibraryK', sans-serif;
   --main-font02 : 'YiSunShinDotumM', sans-serif;
   --sub-font01 : 'GowunDodum-Regular', serif;
-  --sub-font02 : 'GmarketSansMedium', serif;
+  --sub-font02 : 'Suit', serif;
   --color-navy : #495262;
   --color-orange : #F6A217;
   --color-sky : #87BED8;
@@ -288,7 +288,7 @@ footer ul{
   align-items: center;
   margin-bottom: 20px;
 }
-footer .f-logo li:first-child{
+footer .f-logo li:first-child a{
   display: flex;
   gap: 20px;
   align-items: center;
@@ -327,6 +327,7 @@ footer .f-txt{
   color: #fff;
   text-align: center;
   margin-top: 30px;
+  font-family: var(--sub-font02);
 }
 /*반응형*/
 

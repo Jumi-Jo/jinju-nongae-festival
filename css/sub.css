@@ -5,7 +5,7 @@
   --main-font01 :  'LibraryK', sans-serif;
   --main-font02 : 'YiSunShinDotumM', sans-serif;
   --sub-font01 : 'GowunDodum-Regular', serif;
-  --sub-font02 : 'GmarketSansMedium', serif;
+  --sub-font02 : 'Suit', serif;
   --color-navy : #495262;
   --color-orange : #F6A217;
   --color-sky : #87BED8;
@@ -207,7 +207,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  font-family: var(--main-font02);
+  font-family: var(--sub-font02);
   text-align: center;
 }
 .sub-main-visual .sub-main-txt h3{
