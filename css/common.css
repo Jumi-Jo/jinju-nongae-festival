@@ -378,6 +378,9 @@ footer .f-txt{
   footer ul{
     gap: 30px;
   }
+  footer .f-logo li:first-child a{
+  gap: 10px;
+}
   footer .f-logo li:first-child p{
     font-size: 1.6rem;
   }
