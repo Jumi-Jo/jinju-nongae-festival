@@ -503,31 +503,24 @@
     font-size: 1.4rem;
   }
   .event .event-content .ev-li li{
-    width: calc((100% - 60px) / 3);
-    height: 300px;
-    margin-bottom: 40px;
+    width: calc((100% - 20px) / 2);
   }
   .event .event-content .ev-li li .event-up{
     width: 100%;
-    height: 150px;
+    height: 200px;
     overflow: hidden;
   }
+  .event .event-content .ev-li li .event-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .event .event-content .event-txt{
-    height: 160px;
+    padding: 5%;
+    height: 250px;
     border: 2px solid #ccc;
     overflow: hidden;
   }
-  .event .event-content .event-txt h5{
-    font-size: 2rem;
-  }
-
-  .event .event-content .event-txt .sortation{
-    font-size: 1.2rem;
-  }
-  .event .event-content .event-txt p{
-    font-size: 1.4rem;
-  }
-
   .com-btn-more1, .com-btn-more2{
     width: 160px;
     font-size: 1.6rem;
@@ -557,22 +550,32 @@
     font-size: 1.4rem;
   }
   .event .event-content .ev-li li{
-    width: calc((100% - 60px) / 3);
-    height: auto;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 50px;
   }
   .event .event-content .ev-li li .event-up{
     width: 100%;
-    height: 120px;
+    height: 300px;
     overflow: hidden;
+  }
+  .event .event-content .ev-li li .event-up img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .event .event-content .event-txt{
-    height: 100px;
-    border: 2px solid #ccc;
-    overflow: hidden;
+    padding: 3%;
   }
   .event .event-content .event-txt h5{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 3%;
+  }
+  .event .event-content .event-txt p{
+    margin: 3% 0;
+  }
+  .event .event-content .event-txt .sortation{
+    padding: 3px 7px 2px;
+    border-radius: 10px;
   }
   .com-btn-more1, .com-btn-more2{
     width: 50px;
