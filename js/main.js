@@ -126,4 +126,17 @@ const photo_collection = new Swiper(".photo-collection", {
     let aa = $(this).index();
     $(".event .event-content .event-tab > li").eq(aa).fadeIn().siblings().hide();
   });
+    //sub -collection
+    //#brand tab 메뉴
+  //.brand-img 의 첫번째 빼고 숨김
+  $(".collection .collection-content .collection-tab > li").not(":first").hide();
+  //".event .event-name ul li" 를 클릭하면 다음과 같은 일이 일어남
+  // 1. 선택한 li만 active가 붙고 나머지는 active가 없어져야함
+  // 2. 선택한 li의 순번을 담을 변수를 하난 생성
+  // 3. .event .event-img ul li 중에 순번과 동일한 요소만 보여주고 나머지는 숨김
+  $(".collection .collection-name ul li").click(function(){
+    $(this).addClass("active").siblings().removeClass("active");
+    let aa = $(this).index();
+    $(".collection .collection-content .collection-tab > li").eq(aa).fadeIn().siblings().hide();
+  });
 });//end
