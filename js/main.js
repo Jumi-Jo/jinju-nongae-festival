@@ -139,4 +139,101 @@ const photo_collection = new Swiper(".photo-collection", {
     let aa = $(this).index();
     $(".collection .collection-content .collection-tab > li").eq(aa).fadeIn().siblings().hide();
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // //program
+  //  // 초기 상태: step2, step3 클릭 못하게
+  // $(".program .step2 li, .program .step3 li").addClass("disabled");
+
+  // // Step1 클릭
+  // $(".program .step1 li").on("click", function() {
+  //   // 선택 스타일 적용
+  //   $(".step1 li").removeClass("active");
+  //   $(this).addClass("active");
+
+  //   $(".program .pro-steps ol li.step2 .select-body").slideDown();
+  //   // Step2 활성화
+  //   $(".program .step2 li").removeClass("disabled");
+  // });
+
+  // // Step2 클릭
+  // $(".program .step2 li").on("click", function() {
+  //   if ($(this).hasClass("disabled")) return; // 비활성화 상태면 무시
+
+
+  //   $(".program .step2 li").removeClass("active");
+  //   $(this).addClass("active");
+
+  //    $(".program .pro-steps ol li.step3 .select-body").slideDown();
+  //   // Step3 활성화
+  //   $(".program .step3 li").removeClass("disabled");
+  // });
+
+  // // Step3 클릭
+  // $(".program .step3 li").on("click", function() {
+  //   if ($(this).hasClass("disabled")) return;
+
+  //   $(".program .step3 li").removeClass("active");
+  //   $(this).addClass("active");
+  // });
+
+
+ // 프로그램별 Step 초기화
+  $(".program .pro-list > li").each(function(){
+    var $programLi = $(this);
+
+    // 초기 상태: step2, step3 li 비활성화, select-body 숨기기
+    $programLi.find(".step2 li, .step3 li").addClass("disabled");
+    $programLi.find(".step2 .select-body, .step3 .select-body").hide();
+
+    // step1 클릭 이벤트
+    $programLi.find(".step1 li").on("click", function(){
+      var $this = $(this);
+
+      // 선택 스타일 적용
+      $programLi.find(".step1 li").removeClass("active");
+      $this.addClass("active");
+
+      // step2 보이기 + 활성화
+      $programLi.find(".step2 .select-body").slideDown();
+      $programLi.find(".step2 li").removeClass("disabled");
+    });
+
+    // step2 클릭 이벤트
+    $programLi.find(".step2 li").on("click", function(){
+      var $this = $(this);
+      if($this.hasClass("disabled")) return;
+
+      // 선택 스타일 적용
+      $programLi.find(".step2 li").removeClass("active");
+      $this.addClass("active");
+
+      // step3 보이기 + 활성화
+      $programLi.find(".step3 .select-body").slideDown();
+      $programLi.find(".step3 li").removeClass("disabled");
+    });
+
+    // step3 클릭 이벤트
+    $programLi.find(".step3 li").on("click", function(){
+      var $this = $(this);
+      if($this.hasClass("disabled")) return;
+
+      // 선택 스타일 적용
+      $programLi.find(".step3 li").removeClass("active");
+      $this.addClass("active");
+    });
+  });
 });//end
